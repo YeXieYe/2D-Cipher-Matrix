@@ -118,7 +118,7 @@ def decrypt_matrix(grid, secret_key):
 
 
 if __name__ == "__main__":
-    filepath = input("Введите путь к файлу с шифром (например, data/cipher.txt): ").strip()
+    filepath = input("Введите путь к файлу с шифром (например, ../data/cipher.txt или data/cipher.txt (если запуск из корня проекта)): ").strip()
     SECRET_KEY = input("Введите секретный ключ: ").strip()
     grid = parse_ascii_grid(filepath)
     result = decrypt_matrix(grid, SECRET_KEY)
